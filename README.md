@@ -73,7 +73,8 @@ if(!isset($_GET['code'])) { // Check for Code using GET Method.
 ```
 
 ### **License**
-The framework is licensed Under MIT license, Please fell fro to Fork, Edit, Re-publish with no limits, Please reffer to [LICENSE](https://github.com/elkhayder/Discord-Oauth2/blob/master/LICENSE "LICENSE") for more.
+The framework is licensed Under MIT license, Please fell free to use it at anyway you would like,   
+Please reffer to [LICENSE](https://github.com/elkhayder/Discord-Oauth2/blob/master/LICENSE "LICENSE") for more.
 
 ### **Social Networking**
 - **Github** : [elkhayder](https://www.github.com/elkhayder)
