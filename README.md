@@ -1,5 +1,5 @@
 # Discord Oauth2 PHP Framework
-*The Framework is a simple gate trough Discord's Oauth2 Web API, Based on PHP cURL
+*The Framework is a simple gate trough Discord's Oauth2 Web API, Based on PHP cURL  
 It is more easier, less complicated and more practical for multiple uses*
 
 ### **Requirements**
