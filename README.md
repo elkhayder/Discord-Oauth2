@@ -20,7 +20,7 @@ $request = new DiscordOauth2(
     "APP ID",
     "APP SECRET",
     "Redirect URL",
-    "Scopes (as an array)"
+    "Scopes (array)"
 );
 ```
 - I programmed the Framework to throw Exceptions, so it is better to use it inside Try / Catch statements ...
