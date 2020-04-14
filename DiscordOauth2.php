@@ -135,10 +135,9 @@ class DiscordOauth2 {
     }
 
     private function _is_curl_installed() { // Check if curl is installed
-        if  (in_array('curl', get_loaded_extensions())) {
+        if (in_array('curl', get_loaded_extensions())) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
