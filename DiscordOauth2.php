@@ -16,7 +16,7 @@ class DiscordOauth2 {
         //if(!isset($app_id, $app_secret, $redirect_url, $scopes)) throw new Exception("Empty Constructor", 0);
         if(!$this->_is_curl_installed()) throw new Exception("cURL isn't Installed / Activated"); // Chech for cURL extension
 
-        if(!is_int($app_id)) throw new Exception("Invalid APP ID"); // Check APP Id
+        if(!is_numeric($app_id)) throw new Exception("Invalid APP ID"); // Check APP Id
 
         // APP Secret Validation
 
