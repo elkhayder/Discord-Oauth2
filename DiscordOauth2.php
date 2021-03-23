@@ -14,7 +14,7 @@ class DiscordOauth2 {
     */
     public function __construct($app_id, $app_secret, $redirect_url, $scopes = []) {
         //if(!isset($app_id, $app_secret, $redirect_url, $scopes)) throw new Exception("Empty Constructor", 0);
-        if(!$this->_is_curl_installed()) throw new Exception("cURL isn't Installed / Activated"); // Chech for cURL extension
+        if(!in_array('curl', get_loaded_extensions())) throw new Exception("cURL isn't Installed / Activated"); // Chech for cURL extension
 
         if(!is_numeric($app_id)) throw new Exception("Invalid APP ID"); // Check APP Id
 
@@ -132,13 +132,5 @@ class DiscordOauth2 {
         }
         // return Result
         return $result;
-    }
-
-    private function _is_curl_installed() { // Check if curl is installed
-        if (in_array('curl', get_loaded_extensions())) {
-            return true;
-        } else {
-            return false;
-        }
     }
 }
