@@ -63,7 +63,7 @@ if(!isset($_GET['code'])) { // Check for Code using GET Method.
         $code = $_GET['code'];
         $tokenRequest = $request->exchangeCode('authorization_code', $code); // Returns array
         $authToken = $tokenRequest['access_token']; // Get access token from tokens request
-        $client = $request->fetchData[$authToken]; // Fetch User data
+        $client = $request->fetchData($authToken); // Fetch User data
         // ↓ Use Example ↓
         $clientGuilds = $client['guilds'];
     } catch (Exception $e) {
